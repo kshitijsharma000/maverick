@@ -2,8 +2,8 @@
     <string name="app_name">Desk</string>
 
     <string name="title_section1">Home</string>
-    <string name="title_section3">Profile</string>
-    <string name="title_section2">Credits</string>
+    <string name="title_section3">Credits</string>
+    <string name="title_section2">Profiles</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
