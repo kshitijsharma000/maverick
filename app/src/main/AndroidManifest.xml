@@ -8,10 +8,10 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.desk.MainActivity"
+            android:name=".mainUI.MainActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name="com.desk.SplashActivity"
+            android:name=".mainUI.SplashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

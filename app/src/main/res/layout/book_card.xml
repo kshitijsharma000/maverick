@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/book"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    card_view:cardCornerRadius="4dp">
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Book 0" />
+
+</android.support.v7.widget.CardView>

@@ -1,4 +1,4 @@
-package com.desk;
+package com.desk.mainUI;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.desk.R;
 
 /**
  * Created by kshitij.sharma on 9/28/2015.
