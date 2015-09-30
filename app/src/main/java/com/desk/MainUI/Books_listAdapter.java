@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.desk.Categories_list;
 import com.desk.R;
 
 import java.util.ArrayList;

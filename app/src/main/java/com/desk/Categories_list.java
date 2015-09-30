@@ -1,4 +1,4 @@
-package com.desk.mainUI;
+package com.desk;
 
 /**
  * Created by kshitij.sharma on 9/30/2015.
