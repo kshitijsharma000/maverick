@@ -8,7 +8,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -37,7 +36,8 @@ public class FetchUrl {
         return null;
     }
 
-    private class service extends AsyncTask<String, Integer, String> {
+    class service extends AsyncTask<String, Integer, String> {
+        public AsyncResponse delegate = null;
 
         public service() {
             super();
@@ -51,28 +51,35 @@ public class FetchUrl {
         @Override
         protected String doInBackground(String... params) {
             URL url = null;
+            StringBuffer sb = null;
             try {
                 url = new URL(params[0]);
                 System.out.println("url recieved in async task " + url);
 
                 URLConnection connection = url.openConnection();
                 connection.connect();
-                InputStream inputStream = new BufferedInputStream(url.openStream(),10*1024);
+                InputStream inputStream = new BufferedInputStream(url.openStream(), 10 * 1024);
 
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String line;
+                sb = new StringBuffer();
 
+                while ((line = bufferedReader.readLine()) != null) {
+                    sb.append(line + "\n");
+                }
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return null;
+            return sb.toString();
         }
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            delegate.processResult(s);
         }
 
         @Override
