@@ -1,41 +1,24 @@
 package com.desk.login;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 import com.desk.R;
-import android.view.View.OnClickListener;
-public class LoginActivity extends Activity implements OnClickListener {
-TextView register ;
+
+public class signUp extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        register=(TextView) findViewById(R.id.tSignup);
-        register.setOnClickListener(this);
-
+        setContentView(R.layout.activity_sign_up);
     }
-    public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.tSignup :
-                Intent reg = new Intent(this,signUp.class);
-                startActivity(reg);
 
-
-
-        }
-
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_up, menu);
         return true;
     }
 

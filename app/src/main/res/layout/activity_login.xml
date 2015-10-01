@@ -14,15 +14,17 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:padding="10dp">
+
+        android:id="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:background="#ffffff"
+            android:padding="10dp"
             android:orientation="vertical"
-            android:padding="10dp">
+            >
 
             <EditText
                 android:id="@+id/etEmail"
@@ -47,30 +49,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:background="#3ad3ff"
+                android:background="#30c0ff"
                 android:clickable="true"
                 android:text="Sign In"
                 android:textColor="#ffffff" />
 
-            <com.google.android.gms.common.SignInButton
-                android:id="@+id/sign_in_button"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                />
-
-            <Button
-                android:id="@+id/btnSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#ffbd32"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" Sign Up "
+                android:id="@+id/tSignup"
                 android:clickable="true"
-                android:text="Sign Up"
-                android:textColor="#ffffff" />
+                android:contextClickable="true"
+                android:layout_gravity="right"
+                android:textColor="#ff1c0f"
+                android:onClick="onClick"
+                android:background="@android:drawable/editbox_background_normal" />
+
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
