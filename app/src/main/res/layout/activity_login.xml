@@ -28,7 +28,6 @@
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:hint="Email"
                 android:padding="10dp"
                 android:textColorHint="#bbbbbb" />
@@ -37,8 +36,6 @@
                 android:id="@+id/etPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="-2dp"
                 android:hint="Password"
                 android:padding="10dp"
                 android:password="true"
@@ -48,12 +45,12 @@
                 android:id="@+id/btnSingIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:text="Sign In"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:background="#3ad3ff"
-                android:textColor="#ffffff"
                 android:clickable="true"
-                android:layout_marginTop="10dp"/>
+                android:text="Sign In"
+                android:textColor="#ffffff" />
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
@@ -62,25 +59,17 @@
 
                 />
 
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffbd32"
+                android:clickable="true"
+                android:text="Sign Up"
+                android:textColor="#ffffff" />
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="#ffffff"
-        android:orientation="vertical"
-        android:padding="10dp">
-        <Button
-            android:id="@+id/btnSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:padding="10dp"
-            android:text="Sign Up"
-            android:background="#ffbd32"
-            android:textColor="#ffffff"
-            android:clickable="true" />
-     ></LinearLayout>
+
 
     </LinearLayout>
 
