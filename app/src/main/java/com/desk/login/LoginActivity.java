@@ -7,18 +7,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.desk.R;
 import android.view.View.OnClickListener;
 public class LoginActivity extends Activity implements OnClickListener {
 TextView register ;
+    Button signin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         register=(TextView) findViewById(R.id.tSignup);
+        signin=(Button) findViewById(R.id.btnSingIn);
         register.setOnClickListener(this);
+        signin.setOnClickListener(this);
 
     }
     public void onClick(View v) {
@@ -26,6 +31,7 @@ TextView register ;
             case R.id.tSignup :
                 Intent reg = new Intent(this,signUp.class);
                 startActivity(reg);
+            case R.id.btnSingIn:
 
 
 
