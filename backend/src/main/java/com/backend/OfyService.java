@@ -9,7 +9,7 @@ import com.googlecode.objectify.ObjectifyService;
  */
 public class OfyService {
     static {
-        ObjectifyService.register(User.class);
+        ObjectifyService.register(UserSignUp.class);
     }
 
     public static Objectify ofy() {

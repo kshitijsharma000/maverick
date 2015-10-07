@@ -15,6 +15,7 @@ public final class DatabaseContract {
         public static final String TABLE_NAME = "UserDetails";
         public static final String COLUMN_NAME_USER_ID = "username";
         public static final String COLUMN_NAME_USER_PW = "password";
+
         //todo rohit.. add new columns here..
     }
 }
