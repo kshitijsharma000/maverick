@@ -13,12 +13,12 @@ public class LoginDataBaseAdapter
 {
     static final String DATABASE_NAME = "login.db";
     static final int DATABASE_VERSION = 1;
-    static final String TABLE_NAME ="UserTable ";
+    static final String TABLE_NAME ="UserTable";
     public static final int NAME_COLUMN = 1;
     public static final String Col1="ID";
     public static final String Col2="USERNAME";
     public final static String Col3="PASSWORD";
-    public final static String Col4="CONTACT NO";
+    public final static String Col4="CONTACT_NO";
 
     // TODO: Create public field for each column in your table.
     // SQL Statement to create a new database.
@@ -50,7 +50,7 @@ public class LoginDataBaseAdapter
         return db;
     }
 
-    public void insertEntry(String Id ,String userName,String password,String contactno)
+    public void insertEntry(String Id ,String userName,String password,Integer contactno)
     {
         ContentValues newValues = new ContentValues();
         // Assign values for each row.
